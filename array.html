@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array methods remaining</title>
+    <h1>Array methods remaining</h1>
+<h2>1.Deleting Elements</h2>
+    <body>
+       <p id="girls"></p>
+<p id="boys"></p>
+    <script type="text/javascript">
+    //1.Deleting Elements
+    //Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:
+    var students = ["Mayank", "Radhika", "Smita", "Prince"];
+document.getElementById("girls").innerHTML =
+"The boy student is: " + students[0];
+delete students[0];
+document.getElementById("boys").innerHTML =
+"The girls student is: " +   students [0];
+    </script>
+  </head>   
+ </body>
+  </html>
+
+
+
+  <!DOCTYPE html>
+<html>
+<body>
+<h2>2.Automatic toString()</h2> 
+<p></p>
+<p id="Names"></p>
+<script>
+    //2.Automatic toString()
+    //JavaScript automatically converts an array to a comma separated string when a simple value is expected:
+var students = ["Mayank", "Radhika", "Smita", "Prince"];
+document.getElementById("Names").innerHTML = students;
+</script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>3.Slicing an Array</h2> 
+<p>This  example slices out a part of an array starting from array element 2 ("Radhika")</p>
+<p id="Names1"></p>
+<script>
+    //*Slicing an Array
+    //This  example slices out a part of an array starting from array element 2 ("Radhika")
+var students1 = ["Mayank", "Radhika", "Smita", "Prince"];
+var show = students1.slice(2);
+document.getElementById("Names1").innerHTML = students + "<br><br>" + show;
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>3.Merging Array with values</h2>
+<p id="Histry"></p>
+<script>
+   // <p>The concat() method can also merge string values to arrays:</p>
+var arr1 = ["Auranzeb", "Humayu", "Babar"];
+var myChildren = arr1.concat("Mughal"); 
+document.getElementById("Histry").innerHTML = myChildren;
+</script>
+</body>
+</html>

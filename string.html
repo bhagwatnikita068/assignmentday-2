@@ -1,0 +1,80 @@
+  
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript String Methods</h1>
+<h2>1.Property Access<h2>
+<p id="stud1"></p>
+<script>
+    //<p>ECMAScript 5 allows property access on strings:</p>
+var str = "Small Example 1";
+document.getElementById("stud1").innerHTML = str[0];
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>2.charCodeAt()</h2>
+<p id="Stud"></p>
+<script>
+    //The charCodeAt() method used to returns the unicode of the character at a given position in a string:
+var str = "This is a small example2";
+document.getElementById("Stud").innerHTML = str.charCodeAt(2);
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>3. String.trim()</h2>
+<button onclick="press()">Click here</button>
+<script>
+//<p>Click the button to alert the string with removed whitespace.</p>
+function press() {
+  var str = "     CORONA GO.....     ";
+  alert(str.trim());
+}
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>4.Replacing String Content</h2>
+<p>Replace "Bike" with "Car" in the paragraph below:</p>
+<button onclick="F()">Click Me</button>
+<p id="stud3"> seat  on my Bike!</p>
+<script>
+function F() {
+  var str = document.getElementById("stud3").innerHTML; 
+  var txt = str.replace("Bike","Car");
+  document.getElementById("stud3").innerHTML = txt;
+}
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>5.Searching for a String in a String</h2>
+<h3> string in a string is a 'Pune' </h3>
+<p id="stud5"></p>
+<script>
+    //<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+var str = "I am in 'Pune' City!";
+var pos = str.search("Pune");
+document.getElementById("stud5").innerHTML = pos;
+</script>
+
+</body>
+</html>
